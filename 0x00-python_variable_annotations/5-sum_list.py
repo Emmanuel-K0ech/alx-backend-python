@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-''' Module 5-sum_list.py '''
+''' Module 5-sum_list.py Contents - sum_list() '''
+
 from typing import List
 
 
