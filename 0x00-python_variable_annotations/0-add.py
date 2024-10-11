@@ -13,4 +13,4 @@ def add(a: float, b: float) -> float:
         b(float)
     Return: a + b -> float
     """
-    return a + b
+    return float(a + b)
