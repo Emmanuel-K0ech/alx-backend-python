@@ -6,7 +6,7 @@ from typing import Optional
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-def task_wait_random(max_delay: int) -> Optional[asyncio.Task]:
+def task_wait_random(max_delay: int) -> asyncio.Task:
     """
     Takes the integer max_delay and returns a task
     Args:
