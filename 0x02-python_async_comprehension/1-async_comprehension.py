@@ -10,7 +10,7 @@ async def async_comprehension() -> List[float]:
     """
     Returns random numbers receive from an asynchrounous generator
     """
-    result: List[float] = []
+    result = []
     async for res in aiter(async_generator()):
         result.append(res)
     return result
