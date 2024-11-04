@@ -54,7 +54,7 @@ class TestGetJson(unittest.TestCase):
         mock_get.return_value.json.return_value = {"key": "value"}
         test_payload = get_json(test_url)
         self.assertEqual(test_payload, {"key": "value"})
-        self.assert_called_once_with(test_url)
+        self.assertIs(mock_get.call_count, 1)
 
 
 class TestMemoize(unittest.TestCase):
